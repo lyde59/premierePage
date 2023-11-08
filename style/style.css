@@ -1,11 +1,14 @@
 h3{
     color:#0000ff;
+    margin-left: 40%;
 }
 h4 {
     font-size: 2rem;
+    margin-left: 40%;
 }
 h3{
     font-size: 1.5rem;
+    margin-left: 40%;
 }
 
 body{
@@ -14,8 +17,9 @@ body{
 
 #kitty {
     width:20%;
-    margin-left: 25%;
-    margin-top: -30%;
+    margin-left: 65%;
+    margin-top: -20%;
+   
 }
 
 #coord{
@@ -26,10 +30,15 @@ body{
     border-radius: 15px;
     box-shadow: 5px 5px 10px 0px;
     transition : transform 2s;
+    margin-left: 40%;
 }
 
 #coord:hover{
     background-color: #a52a2a;
     transform:translate3d(5px,5px,0);
     transition : transform 0.5s;
+}
+
+#loisir{
+    margin-left: 40%;
 }
