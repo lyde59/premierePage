@@ -37,5 +37,36 @@ article>ul{
 }
 
 .espace{
-    height: 25vh;
+    /*image de fond glissante*/
+    height: 55vh;
+    width: 100%;
+    background-image: url("../assets/GroupePN3.jpg");
+    background-repeat: no-repeat;
+    background-size: 80vw;
+    background-attachment: fixed;
+    background-position-y: 40vh;
+    background-position-x: 20vw;
+
+    /*le texte*/
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    color:#f5deb3 ;
+    padding-right: 5vw;
+}
+.espace>h2{
+    font-size: 4em;
+}
+.espace>h3{
+    font-size: 3.5em;
+}
+#last{
+    margin-bottom: 15vh;
+    margin-top: 15vh;
+}
+iframe{
+    width: 80%;
+    aspect-ratio: 16/9;
+    margin-left: 10%;
 }
