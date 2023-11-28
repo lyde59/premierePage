@@ -8,6 +8,9 @@ function menuChange() {
         case'1':
         fairNumber()
         break
+        case '2':
+            TicTacDoe()
+            break
         default :
         reset()
         break
@@ -69,7 +72,44 @@ function compareNumber() {
     
 }
 
+}
+function TicTacDoe(){
+    reset()
+    console.log('jeu du morpion')
+    /* déclaation des variables */
 
+    let squares=[]
+    
+    /*mise en page de la zone */
+    let infoPanel = document.createElement('div')
+    infoPanel.classList.add('infoPanel')
+
+    let grid = document.createElement('div')
+    grid.classList.add('grid')
+
+    zone.appendChild(infoPanel)
+    zone.appendChild(grid)
+    zone.classList.add('ttdZone')
+
+/*création de la grille*/
+
+for(let i=0; i<9; i++){
+    let square = document.createElement
+    ('div')
+    square.classList.add('square')
+    grid.appendChild(square)
+    squares.push(square)
+}
+
+for(let i=0; i<9; i++){
+    squares[i].addEventListener('click',squareClick.bind(squares[i]))
+}
+
+console.log(squares)
+
+function squareClick(){
+    this.style.backgroundImage = 'url("../assets/rouge.png")'
+    }
 
 }
 
